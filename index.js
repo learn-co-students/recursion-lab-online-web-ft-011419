@@ -1,4 +1,4 @@
-const printString = myString => {
+function printString(myString) {
   console.log(myString[0]);
   if (myString.length > 1) {
     let subString = myString.substring(1)
@@ -8,7 +8,7 @@ const printString = myString => {
   };
 }
 
-const reverseString = string => {
+function reverseString(string) {
   if (string.length > 1) {
     return reverseString(string.substring(1)) + string[0];
   } else {
@@ -16,7 +16,7 @@ const reverseString = string => {
   };
 };
 
-const isPalindrome = string => {
+function isPalindrome(string) {
   let l = string.length;
 
   if (l < 2) {
